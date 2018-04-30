@@ -1,15 +1,11 @@
 ---
-title: "Obesity"
-output:
-  html_document:
-    df_print: paged
-Team: Chenchen, Naoyuki, Randall & Julie
+title: "Final Project Proposal"
+author: "Julie Nguyen"
+output: github_document
+always_allow_html: yes
+editor_options: 
+  chunk_output_type: console
 ---
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 ## Plot in R
 
 We use STATA to run our analysis especially when Lillian showed the a very smart way to run our regression:
@@ -32,7 +28,7 @@ library(ggplot2)
 #install.packages("haven")
 library(haven)
 meps_senior <- read_dta("meps_senior.dta")
-View(meps_senior)
+
 ```
 
 ## Create the 4 packages according the BMI: underweight, normal weight, overweight and obese (equivalent of creation dummy variable in STATA)
